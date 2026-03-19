@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>YashXChi</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+text-align:center;
+}
+
+header{
+font-size:35px;
+padding:30px;
+font-weight:bold;
+}
+
+.games{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+width:220px;
+border-radius:12px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+background:#334155;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>YashXChi</header>
+
+<h2>Select Your Game</h2>
+
+<div class="games">
+
+<div class="card" onclick="openPage('ff.html')">
+<h2>Free Fire Max</h2>
+</div>
+
+<div class="card" onclick="openPage('bgmi.html')">
+<h2>BGMI</h2>
+</div>
+
+<div class="card" onclick="openPage('minecraft.html')">
+<h2>Minecraft</h2>
+</div>
+
+<div class="card" onclick="openPage('comingsoon.html')">
+<h2>Coming Soon</h2>
+</div>
+
+</div>
+
+<script>
+
+function openPage(page){
+window.location.href = page;
+}
+
+</script>
+
+</body>
+</html>
